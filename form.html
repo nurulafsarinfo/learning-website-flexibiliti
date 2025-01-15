@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+        }
+
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid blue;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .login-form-1{
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid blueviolet; */
+            gap: 10px;
+            width: 50%;
+           
+        }
+        .logim-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+        </div>
+        <a href="">LogIn</a>
+    </nav>
+
+    <section class="logim-container">
+        <form class="login-form-1">
+            <h3>Please Log-In</h3>
+            <input type="email" placeholder="Enter Your Email">
+            <input type="password" placeholder="Enter Your password">
+            <input type="submit" value="Log-In">
+        </form>
+    </section>
+    
+    
+    
+    
+    <br><br><br><br><br>
+    <form class="login-form">
+        <h3>Please Log-In</h3>
+        <div class="box">
+            <label for="">Email: <input type="email" placeholder="Enter Your Email"></label>
+        <label for="">Password: <input type="password" placeholder="Enter Your password"></label>
+        </div>
+        <input type="submit" value="Log-In">
+    </form>
+
+
+</body>
+</html>
