@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .content{
+        .container{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 10px;
@@ -19,10 +19,16 @@
         .food img{
             width: 100%;
         }
+        /* simple media query */
+        @media screen and (max-width: 576px){
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="content">
+    <div class="container">
         <div class="food">
             <img src="image/food.jpg" alt="">
             <h3>food Item - 1</h3>
